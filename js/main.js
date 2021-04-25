@@ -35,4 +35,10 @@ const fetchData = (position)=>{
 const onLoad = () =>{
     navigator.geolocation.getCurrentPosition(fetchData);
 }
+
+const interval = setInterval(()=>{
+    onLoad();
+    clearInterval(interval);
+}, 10_000);
+
 //LeoMarqz
