@@ -32,6 +32,7 @@ const fetchData = (position)=>{
     })
 }
 
+//function main
 const onLoad = () =>{
     navigator.geolocation.getCurrentPosition(fetchData);
 }
